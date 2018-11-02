@@ -1,3 +1,4 @@
+[![Docker Repository on Quay](https://quay.io/repository/redhat/podcool/status "Docker Repository on Quay")](https://quay.io/repository/redhat/podcool)
 # Demo Application Used to Showcase Multiple OpenShift Concepts
 
 This repository provides a sample Python web application implemented using the ``Flask`` web framework. It is intended to be used to demonstrate a variety of capabilities of OpenShift 3.11 and higher. The base functionality should work in prior versions but this has not been tested.
