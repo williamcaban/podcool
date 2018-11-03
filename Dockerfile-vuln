@@ -7,7 +7,9 @@ FROM python:3
 # WARNING: DO NOT USE THIS IMAGE IN PRODUCTION
 
 LABEL AUTHOR="William Caban"
-LABEL APP="podcool"
+LABEL APP="podcool-vuln"
+LABEL SECURITY="None"
+LABEL TRUSTED="False"
 
 ENV APP_VERSION v1-dockerfile
 ENV APP_MESSAGE "Docker build default message"
@@ -16,13 +18,6 @@ WORKDIR /usr/src/app
 ENV APP_CONFIG=/usr/src/app/config.py
 
 COPY requirements.txt ./
-
-# NOTE: Not upgrading packages to demo security scanner
-# detecting vulnerabilities (if exist)
-#RUN apk update && apk upgrade 
-
-# These packages are required for pip with the alpine image
-RUN apk add py-configobj libusb py-pip python-dev gcc linux-headers libc-dev
 
 RUN pip install --no-cache-dir -r requirements.txt
 
