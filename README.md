@@ -42,15 +42,19 @@ Using the basic funcitonalities of the demo app:
 | /ping/\<dhost>      	| Return a JSON formatted list tcp_ping result to port 80 of ``dhost``.              	| This can be used to demo Istio and Multus/OpenShift Multinetwork functionalities.	|
 | /ping/\<dhost>/\<dport>      	| Return a JSON formatted list tcp_ping result to port ``dport`` of ``dhost``.              	| This can be used to demo Istio and Multus/OpenShift Multinetwork functionalities.	|
 
-# Demo & Labs
+# DEMOS & LABS
 
-- [Lab 1 Deploying an App](docs/Lab1-deploying_app.md) This lab demonstrate how to deploy an app in OpenShift, the different deployment strategies and ilustrate some traffic splitting options.
-- [Lab 2 Simulating Webhooks](docs/Lab2-webhooks.md) This lab simulate rebuilds triggered by webhooks.
+Some demos and labs that use this application are available at [https://github.com/williamcaban/podcool-docs](https://github.com/williamcaban/podcool-docs)
 
-Comming soon:
+- Deploying an App using the Developer Console
+- Deploying an App using the OpenShift Client CLI
+- Testing Pod Resiliency
+- Deployment Strategies
+- Splitting Traffic
 - CI/CD Pipelines
-- Service Mesh
-- Multus
+- Quay Enterprise Registry
+- OpenShift Service Mesh [Tech Prev] -- (Maistra, Isitio, Envoy, Kiali, Prometheus, Grafana, Jaeger)
+- OpenShift Multi-network [Dev Prev] -- (Multus)
 
 # Using a Minishift Environment
 
